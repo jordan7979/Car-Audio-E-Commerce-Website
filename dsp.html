@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSP/Amplifier Product Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="framework/css/bootstrap.min.css">
+    <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-placeholder"></div>
+
+<br>
+
+<!-- DSP Info Section -->
+<section id="dspInfo" class="container">
+    <h2 class="text-center mb-4">DSP/Amplifier Information</h2>
+    <div class="mb-4"> 
+        <label for="sortPriceDSP">Sort by price:</label>
+        <select id="sortPriceDSP">
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+    </div>
+    <div id="dspAmplifiersRow" class="row"></div>
+    
+        <!-- DSP information will be dynamically added here -->
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Bootstrap JS and jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/dtsak.js"></script>
+<script type="text/javascript" src="framework/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript for fetching and displaying DSP information -->
+<script src="js/dsp.js">
+</script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

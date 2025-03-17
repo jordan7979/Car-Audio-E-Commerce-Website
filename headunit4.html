@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers Product Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="framework/css/bootstrap.min.css">
+    <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="abc.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-placeholder"></div>
+
+
+<!-- Product Details -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <img src="images/player4.jpg" class="img-fluid" id="speaker-image" alt="Speaker">
+        </div>
+        <div class="col-6">
+            <h2 class="speaker-name">Kenwood DMX8020S</h2>
+            <p class="text-muted">Apple CarPlay™ & Android Auto™ Ready</p>
+            <h3 class="speaker-price">RM1688.00</h3>
+            <p class="mt-4">
+                <h3>Specifications</h3>
+                    <ul>
+                        <li>USB Mirroring Ready </li>
+                        <li>Customizable Multi-Widget Screen</li> 
+                        <li>Built-in Bluetooth</li>  
+                        <li>3 Camera Inputs</li>
+                        <li>13 Band EQ & Digital Time Alignment</li>
+                       
+                </p>
+                <div class="quantity-whole-container">
+                    <span class="product-page-quantity">Quantity: </span>
+                    <div class="quantity-container">  
+                    <button class="minus-btn" type="button" name="button">
+                        -
+                    </button>
+                    <input class="quantity-input" type="text" name="name" value="1">
+                    <button class="plus-btn" type="button" name="button">
+                        +
+                    </button>
+                </div>
+            <button class="btn btn-primary mt-3" onclick="addToCart()"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Bootstrap JS and jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="framework/js/bootstrap.bundle.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/add.js"></script>
+<script src="js/shopping.js"></script>
+<script src="js/add_cart.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</body>
+</html>

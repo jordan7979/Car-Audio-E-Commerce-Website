@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers Product Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="framework/css/bootstrap.min.css">
+    <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="abc.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-placeholder"></div>
+
+<!-- Product Details -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <img src="images/focal.jpg" class="img-fluid" id="speaker-image" alt="Speaker">
+        </div>
+        <div class="col-6">
+            <h2 class="speaker-name">Focal Expert Series Flax Evo PS165F3E</h2>
+            <p class="text-muted"> 80W 160W Peak Power</p>
+            <h3 class="speaker-price">RM4988.00</h3>
+            <p class="mt-4">
+                <h3>Features</h3>
+                    <ul>
+                        <li>Al/Mg ‘M’-profile inverted dome TAM tweeter</li>
+                        <li>Made in France in the Focal workshops</li> 
+                        <li>High power handling</li>  
+                        <li>Deep, sustained bass</li>
+                        <li>Very compact midrange</li>
+                </p>
+                <div class="quantity-whole-container">
+                    <span class="product-page-quantity">Quantity: </span>
+                    <div class="quantity-container">  
+                    <button class="minus-btn" type="button" name="button">
+                        -
+                    </button>
+                    <input class="quantity-input" type="text" name="name" value="1">
+                    <button class="plus-btn" type="button" name="button">
+                        +
+                    </button>
+                </div>
+            <button class="btn btn-primary mt-3" onclick="addToCart()"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Bootstrap JS and jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="framework/js/bootstrap.bundle.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/add.js"></script>
+<script src="js/add_cart.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers Product Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="framework/css/bootstrap.min.css">
+    <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-placeholder"></div>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">All Speakers</h1>
+    <div class="container">
+        <div class="mb-4">
+            <label for="sortPrice">Sort by price:</label>
+            <select id="sortPrice">
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+        </div>
+        <div id="speakersContainer" class="row"></div>
+        
+            <!-- Speaker Cards will be dynamically inserted here -->
+        </div>
+    </div>
+</div>    
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+
+<!-- Bootstrap JS and jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/dtsak.js"></script>
+<script src="js/navbar.js"></script>
+<script type="text/javascript" src="framework/js/bootstrap.bundle.min.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/speakers.js"></script>
+</body>
+</html>

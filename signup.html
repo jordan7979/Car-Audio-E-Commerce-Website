@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olaf Car Audio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Vuetify CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="framework/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="abc.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<header>
+ <div id="navbar-placeholder"></div>
+
+<div id="form" class="col-12">
+    <h1 class="text-center">Registration Form</h1>
+    <div id="app" class="container">
+        <v-form ref="myForm" v-model="valid">
+            <v-container>
+                <v-row>
+                    <v-col cols="6">
+                        <v-text-field
+                            name="firstname"
+                            v-model="firstname"
+                            :rules="nameRules"
+                            label="First Name"></v-text-field>
+                    </v-col>
+                    <v-col cols="6">
+                        <v-text-field
+                            name="lastname"
+                            v-model="lastname"
+                            :rules="nameRules"
+                            label="Last Name"></v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col cols="6">
+                        <v-text-field
+                            name="username"
+                            v-model="username"
+                            :rules="userRules"
+                            label="Username"></v-text-field>
+                    </v-col>
+                    <v-col cols="6">
+                        <v-text-field
+                            name="email"
+                            v-model="email"
+                            :rules="emailRules"
+                            label="Email"></v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col cols="6">
+                        <v-text-field
+                            name="mobile number"
+                            v-model="mobile_number"
+                            :rules="mobileRules"
+                            label="Mobile Numbers"></v-text-field>
+                    </v-col> 
+                    <v-col cols="6">
+                        <v-text-field
+                            name="postcode"
+                            v-model="postcode"
+                            :rules="postcodeRules"
+                            label="Postcode"></v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col cols="12" md="12">
+                        <v-text-field
+                            name="street address"
+                            v-model="street_address"
+                            :rules="streetRules"
+                            label="Street Address"></v-text-field>
+                    </v-col>
+                </v-row>
+                <v-row>     
+                    <v-col cols="6">
+                        <v-text-field
+                            name="password"
+                            v-model="password"
+                            :rules="passwordRules"
+                            type="password"
+                            label="Password"
+                            required
+                        ></v-text-field>
+                    </v-col>
+                    <v-col cols="6">
+                        <v-text-field
+                            name="confirm password"
+                            v-model="confirm_password"
+                            :rules="confirmpasswordRules()"
+                            type="password"
+                            label="Confirm Password"
+                            required
+                        ></v-text-field>
+                    </v-col>
+                </v-row>         
+            </v-container>
+            <v-btn id="sweetalert" class="login-signup-submit-btn" type="submit" :disabled="!valid" @click="validate">Sign Up</v-btn>
+        </v-form>        
+    </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script src="js/register.js"></script>
+<script type="text/javascript" src="framework/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/dtsak.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script>
+    document.getElementById('sweetalert').addEventListener('click', function(event) {
+
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+    })
+</script>
+
+</body>
+</html>
